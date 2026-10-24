@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محادثات مستوى A1 - المحادثات 23 و24 و25 و26 و27 و30 مكتملة</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .de-text {
+            font-family: 'Outfit', sans-serif;
+            direction: ltr;
+            display: inline-block;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+
+        .speaking-pulse {
+            animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        .title-glow { text-shadow: 0 0 8px rgba(103,232,249,.8), 0 0 22px rgba(59,130,246,.65); }
+        .rights-glow { text-shadow: 0 0 8px rgba(103,232,249,.7); }
+        .german-flag { animation: flag-wave 2.2s ease-in-out infinite; transform-origin: left center; }
+        .flag-frame { animation: frame-glow 2.5s ease-in-out infinite alternate; }
+        @keyframes flag-wave { 0%,100% { transform: perspective(350px) rotateY(-7deg) skewY(0deg); } 50% { transform: perspective(350px) rotateY(9deg) skewY(1deg); } }
+        @keyframes frame-glow { from { box-shadow: 0 0 10px rgba(34,211,238,.2); } to { box-shadow: 0 0 24px rgba(34,211,238,.55); } }
+        .social-link { display:inline-flex; align-items:center; justify-content:center; gap:.5rem; padding:.55rem .85rem; border-radius:.8rem; font-size:.875rem; font-weight:800; border:1px solid #ffffff55; transition:transform .2s, box-shadow .2s; }
+        .social-link:hover { transform:translateY(-2px); box-shadow:0 0 16px #ffffff35; }
+        .social-link svg { width:19px; height:19px; }
+        .telegram-link { color:#bae6fd; background:#0284c733; border-color:#38bdf899; }
+        .instagram-link { color:#fbcfe8; background:#db277733; border-color:#f472b699; }
+        .tiktok-link { color:#f8fafc; background:#334155aa; border-color:#cbd5e199; }
+        .menu-trigger { background:linear-gradient(120deg,#0e7490,#2563eb); border:1px solid #67e8f9aa; box-shadow:0 0 18px #0891b255; }
+        .menu-trigger:hover { box-shadow:0 0 24px #22d3ee88; }
+
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header: title, animated German flag, creator credits and social links -->
+    <header class="bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 text-white shadow-xl relative z-40">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col items-center gap-4">
+            <h1 class="text-2xl sm:text-4xl font-extrabold tracking-wide text-center title-glow">محادثات مستوى A1</h1>
+            <div class="flag-frame rounded-2xl border border-cyan-200/50 bg-white/10 p-3 shadow-lg shadow-cyan-400/30" aria-label="علم ألمانيا المتحرك">
+                <div class="german-flag w-32 sm:w-40 overflow-hidden rounded-md border border-white/30 shadow-xl">
+                    <div class="h-6 sm:h-7 bg-black"></div><div class="h-6 sm:h-7 bg-red-600"></div><div class="h-6 sm:h-7 bg-yellow-400"></div>
+                </div>
+            </div>
+            <div class="rights-panel w-full max-w-2xl rounded-2xl border border-cyan-300/60 bg-white/10 backdrop-blur-md p-4 shadow-lg shadow-cyan-500/20 text-center">
+                <p class="text-base sm:text-lg font-extrabold text-cyan-100 rights-glow mb-3">✦ الحقوق والإعداد: علي خليل ✦</p>
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                    <a href="https://t.me/Ss4ee1" target="_blank" rel="noopener noreferrer" aria-label="قروب التليجرام" class="social-link telegram-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.8 3.2 18.5 20c-.25 1.2-.9 1.5-1.8.95l-5-3.7-2.4 2.3c-.27.27-.5.5-1 .5l.36-5.1 9.3-8.4c.4-.36-.1-.56-.62-.2L5.85 13.6.9 12.05c-1.08-.34-1.1-1.08.23-1.6L20.5 2.9c.9-.33 1.7.2 1.3.3Z"/></svg><span>قروب التليجرام</span></a>
+                    <a href="https://www.instagram.com/eezuui/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link instagram-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm5 3a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2.2a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2Zm5.1-3.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"/></svg><span>Instagram</span></a>
+                    <a href="https://www.tiktok.com/@eezuui" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-link tiktok-link"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.6 6.2a5.8 5.8 0 0 1-3.7-3.7V2h-3.7v13.7a2.7 2.7 0 1 1-2.7-2.7c.4 0 .8.1 1.1.2V9.4a6.5 6.5 0 1 0 5.3 6.4V9a9.4 9.4 0 0 0 5.1 1.5V6.8c-.5 0-1 0-1.4-.2Z"/></svg><span>TikTok</span></a>
+                </div>
+            </div>
+            <button id="mobileMenuBtn" class="menu-trigger p-3 rounded-xl text-white font-bold shadow-lg" aria-label="فتح قائمة الصفحات"><i data-lucide="menu" class="w-5 h-5 inline-block ml-2"></i>قائمة الصفحات</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 py-6 flex-1 flex gap-6 w-full">
+
+        <!-- Sidebar Navigation (Categories Index) -->
+        <aside id="sidebar" class="fixed inset-y-0 right-0 z-50 w-72 max-w-[85vw] bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col h-full overflow-hidden rounded-l-2xl border border-slate-200/80">
+            <div class="p-4 bg-slate-900 text-white flex justify-between items-center lg:rounded-t-2xl">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="book-open" class="w-5 h-5 text-amber-400"></i>
+                    <h2 class="font-bold text-base">قائمة الصفحات (30 محادثة)</h2>
+                </div>
+                <button id="closeSidebarBtn" class="text-slate-400 hover:text-white">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+
+            <div class="p-3 bg-white border-b border-slate-100">
+                <div class="relative">
+                    <input type="text" id="categorySearch" placeholder="بحث في الأقسام والكلمات..." class="w-full pr-9 pl-3 py-2 text-xs rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-rose-500 bg-slate-50">
+                    <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute right-3 top-2.5"></i>
+                </div>
+            </div>
+
+            <nav id="categoryList" class="flex-1 overflow-y-auto p-2 space-y-1 bg-white lg:rounded-b-2xl border-t border-slate-100 max-h-[calc(100vh-120px)]">
+                <!-- Categories rendered dynamically -->
+            </nav>
+        </aside>
+
+        <button id="sidebarBackdrop" class="hidden fixed inset-0 z-40 bg-slate-950/50" aria-label="إغلاق قائمة الصفحات"></button>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 flex flex-col gap-6 min-w-0">
+
+            <!-- Control Bar (Global Controls & Flashcard Mode Toggle) -->
+            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 flex flex-wrap justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <button id="playAllBtn" class="flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl transition text-sm font-medium">
+                        <i data-lucide="play-circle" class="w-4 h-4 text-rose-600"></i>
+                        <span>استماع إلى المحادثة بالتتابع</span>
+                    </button>
+                </div>
+
+                <!-- Global Audio Speed Setting -->
+                <div class="flex items-center gap-2 bg-slate-50 p-1.5 rounded-xl border border-slate-200">
+                    <span class="text-xs font-semibold text-slate-500 px-2 flex items-center gap-1">
+                        <i data-lucide="gauge" class="w-3.5 h-3.5"></i> سرعة النطق:
+                    </span>
+                    <button type="button" data-speed="0.5" aria-pressed="false" class="speed-btn px-2.5 py-1 text-xs font-semibold rounded-lg text-slate-600 hover:bg-white transition">0.5x</button>
+                    <button type="button" data-speed="0.75" aria-pressed="false" class="speed-btn px-2.5 py-1 text-xs font-semibold rounded-lg text-slate-600 hover:bg-white transition">0.75x</button>
+                    <button type="button" data-speed="1" aria-pressed="true" class="speed-btn active-speed px-2.5 py-1 text-xs font-semibold rounded-lg bg-rose-600 text-white shadow-sm transition">1.0x</button>
+                    <button type="button" data-speed="1.25" aria-pressed="false" class="speed-btn px-2.5 py-1 text-xs font-semibold rounded-lg text-slate-600 hover:bg-white transition">1.25x</button>
+                    <button type="button" data-speed="1.5" aria-pressed="false" class="speed-btn px-2.5 py-1 text-xs font-semibold rounded-lg text-slate-600 hover:bg-white transition">1.5x</button>
+                </div>
+            </div>
+
+            <!-- Vocabulary Cards View -->
+            <div id="vocabularyView" class="space-y-6">
+                <!-- Active Category Header -->
+                <div class="bg-gradient-to-r from-slate-900 via-slate-800 to-rose-950 text-white rounded-2xl p-6 shadow-md flex justify-between items-center">
+                    <div>
+                        <span id="categoryNumber" class="text-xs uppercase tracking-wider text-rose-400 font-semibold">محادثة 1 من 30</span>
+                        <h2 id="categoryTitle" class="text-2xl font-bold mt-1">Obst (الفواكه)</h2>
+                        <p id="categorySubtitle" class="text-sm text-slate-300 mt-1">المفردات والجمل الشائعة المتعلقة بالفاكهة مع النطق الصحيح.</p>
+                    </div>
+                    <div class="hidden sm:flex items-center justify-center w-14 h-14 bg-white/10 rounded-2xl backdrop-blur-md">
+                        <i id="categoryIcon" data-lucide="apple" class="w-8 h-8 text-rose-400"></i>
+                    </div>
+                </div>
+
+                <!-- Vocabulary Grid -->
+                <div id="vocabGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Cards populated by JS -->
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        // --- ALL 30 CATEGORIES DATA ---
+        const categoriesData = [{"id":1,"title":"Kennenlernen","titleAr":"التعارف","icon":"message-circle","desc":"محادثة مستوى A1: التعارف، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hallo! Ich heiße Ali. Wie heißen Sie?","ar":"مرحباً! أنا اسمي علي. ما اسم حضرتك؟","exampleDe":"Hallo! Ich heiße Ali. Wie heißen Sie?","exampleAr":"مرحباً! أنا اسمي علي. ما اسم حضرتك؟"},{"de":"Guten Tag! Ich heiße Noor. Woher kommen Sie?","ar":"نهارك سعيد! أنا اسمي نور. من أين حضرتك؟","exampleDe":"Guten Tag! Ich heiße Noor. Woher kommen Sie?","exampleAr":"نهارك سعيد! أنا اسمي نور. من أين حضرتك؟"},{"de":"Ich komme aus dem Irak. Und Sie?","ar":"أنا من العراق. وحضرتك؟","exampleDe":"Ich komme aus dem Irak. Und Sie?","exampleAr":"أنا من العراق. وحضرتك؟"},{"de":"Ich komme aus Syrien. Wo wohnen Sie?","ar":"أنا من سوريا. أين تسكن حضرتك؟","exampleDe":"Ich komme aus Syrien. Wo wohnen Sie?","exampleAr":"أنا من سوريا. أين تسكن حضرتك؟"},{"de":"Ich wohne in Berlin. Wo wohnen Sie?","ar":"أنا أسكن في برلين. أين تسكن حضرتك؟","exampleDe":"Ich wohne in Berlin. Wo wohnen Sie?","exampleAr":"أنا أسكن في برلين. أين تسكن حضرتك؟"},{"de":"Ich wohne auch in Berlin. Was machen Sie?","ar":"أنا أسكن أيضاً في برلين. ماذا تعمل حضرتك؟","exampleDe":"Ich wohne auch in Berlin. Was machen Sie?","exampleAr":"أنا أسكن أيضاً في برلين. ماذا تعمل حضرتك؟"},{"de":"Ich lerne Deutsch. Und was machen Sie?","ar":"أنا أتعلم الألمانية. وماذا تعمل حضرتك؟","exampleDe":"Ich lerne Deutsch. Und was machen Sie?","exampleAr":"أنا أتعلم الألمانية. وماذا تعمل حضرتك؟"},{"de":"Ich studiere hier. Sprechen Sie Englisch?","ar":"أنا أدرس هنا. هل تتحدث الإنجليزية؟","exampleDe":"Ich studiere hier. Sprechen Sie Englisch?","exampleAr":"أنا أدرس هنا. هل تتحدث الإنجليزية؟"},{"de":"Ja, ich spreche Englisch und ein bisschen Deutsch.","ar":"نعم، أتحدث الإنجليزية وقليلاً من الألمانية.","exampleDe":"Ja, ich spreche Englisch und ein bisschen Deutsch.","exampleAr":"نعم، أتحدث الإنجليزية وقليلاً من الألمانية."},{"de":"Sehr schön! Sehr erfreut, Ali.","ar":"جميل جداً! سررت بلقائك يا علي.","exampleDe":"Sehr schön! Sehr erfreut, Ali.","exampleAr":"جميل جداً! سررت بلقائك يا علي."}]},{"id":2,"title":"Am Flughafen","titleAr":"في المطار","icon":"message-circle","desc":"محادثة مستوى A1: في المطار، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Wo ist der Check-in-Schalter?","ar":"نهار سعيد! أين كاونتر تسجيل الوصول؟","exampleDe":"Guten Tag! Wo ist der Check-in-Schalter?","exampleAr":"نهار سعيد! أين كاونتر تسجيل الوصول؟"},{"de":"Der Schalter ist dort drüben. Haben Sie Ihren Pass?","ar":"المكتب هناك في الجهة المقابلة. هل جواز سفرك معك؟","exampleDe":"Der Schalter ist dort drüben. Haben Sie Ihren Pass?","exampleAr":"المكتب هناك في الجهة المقابلة. هل جواز سفرك معك؟"},{"de":"Ja, hier ist mein Reisepass und mein Ticket.","ar":"نعم، هذا جواز سفري وتذكرتي.","exampleDe":"Ja, hier ist mein Reisepass und mein Ticket.","exampleAr":"نعم، هذا جواز سفري وتذكرتي."},{"de":"Wie viel wiegt Ihr Koffer?","ar":"كم يبلغ وزن حقيبتك؟","exampleDe":"Wie viel wiegt Ihr Koffer?","exampleAr":"كم يبلغ وزن حقيبتك؟"},{"de":"Mein Koffer wiegt zwanzig Kilo.","ar":"وزن حقيبتي عشرون كيلوغرامًا.","exampleDe":"Mein Koffer wiegt zwanzig Kilo.","exampleAr":"وزن حقيبتي عشرون كيلوغرامًا."},{"de":"Das ist gut. Haben Sie Handgepäck?","ar":"هذا جيد. هل لديك حقيبة يد؟","exampleDe":"Das ist gut. Haben Sie Handgepäck?","exampleAr":"هذا جيد. هل لديك حقيبة يد؟"},{"de":"Ja, das ist meine Tasche.","ar":"نعم، هذه حقيبتي.","exampleDe":"Ja, das ist meine Tasche.","exampleAr":"نعم، هذه حقيبتي."},{"de":"Gut. Hier ist Ihre Bordkarte.","ar":"جيد. تفضل بطاقة الصعود إلى الطائرة.","exampleDe":"Gut. Hier ist Ihre Bordkarte.","exampleAr":"جيد. تفضل بطاقة الصعود إلى الطائرة."},{"de":"Vielen Dank! Wann fliegt das Flugzeug?","ar":"شكرًا جزيلًا! متى تقلع الطائرة؟","exampleDe":"Vielen Dank! Wann fliegt das Flugzeug?","exampleAr":"شكرًا جزيلًا! متى تقلع الطائرة؟"},{"de":"Um fünfzehn Uhr.","ar":"الساعة الثالثة عصرًا.","exampleDe":"Um fünfzehn Uhr.","exampleAr":"الساعة الثالثة عصرًا."}]},{"id":3,"title":"Im Zug","titleAr":"في القطار","icon":"message-circle","desc":"محادثة مستوى A1: في القطار، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Entschuldigung, ist dieser Platz frei?","ar":"عفواً، هل هذا المقعد فارغ؟","exampleDe":"Entschuldigung, ist dieser Platz frei?","exampleAr":"عفواً، هل هذا المقعد فارغ؟"},{"de":"Ja, der Platz ist frei. Bitte setzen Sie sich.","ar":"نعم، المقعد فارغ. تفضل بالجلوس.","exampleDe":"Ja, der Platz ist frei. Bitte setzen Sie sich.","exampleAr":"نعم، المقعد فارغ. تفضل بالجلوس."},{"de":"Danke! Fährt dieser Zug nach München?","ar":"شكراً! هل يسير هذا القطار إلى ميونخ؟","exampleDe":"Danke! Fährt dieser Zug nach München?","exampleAr":"شكراً! هل يسير هذا القطار إلى ميونخ؟"},{"de":"Ja, das ist der Zug nach München.","ar":"نعم، هذا هو القطار إلى ميونخ.","exampleDe":"Ja, das ist der Zug nach München.","exampleAr":"نعم، هذا هو القطار إلى ميونخ."},{"de":"Wann kommen wir in München an?","ar":"متى نصل إلى ميونخ؟","exampleDe":"Wann kommen wir in München an?","exampleAr":"متى نصل إلى ميونخ؟"},{"de":"Wir kommen um achtzehn Uhr an.","ar":"نصل في الساعة السادسة مساءً.","exampleDe":"Wir kommen um achtzehn Uhr an.","exampleAr":"نصل في الساعة السادسة مساءً."},{"de":"Muss ich umsteigen?","ar":"هل يجب عليّ تغيير القطار؟","exampleDe":"Muss ich umsteigen?","exampleAr":"هل يجب عليّ تغيير القطار؟"},{"de":"Nein, Sie müssen nicht umsteigen.","ar":"لا، لا يجب عليك تغيير القطار.","exampleDe":"Nein, Sie müssen nicht umsteigen.","exampleAr":"لا، لا يجب عليك تغيير القطار."},{"de":"Wo ist mein Ticket? Ah, hier ist mein Ticket.","ar":"أين تذكرتي؟ آه، ها هي تذكرتي.","exampleDe":"Wo ist mein Ticket? Ah, hier ist mein Ticket.","exampleAr":"أين تذكرتي؟ آه، ها هي تذكرتي."},{"de":"Gute Fahrt!","ar":"رحلة سعيدة!","exampleDe":"Gute Fahrt!","exampleAr":"رحلة سعيدة!"}]},{"id":4,"title":"An der Haltestelle","titleAr":"في موقف الحافلة","icon":"message-circle","desc":"محادثة مستوى A1: في موقف الحافلة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hallo, wann kommt der Bus?","ar":"مرحبًا، متى يأتي الباص؟","exampleDe":"Hallo, wann kommt der Bus?","exampleAr":"مرحبًا، متى يأتي الباص؟"},{"de":"Der Bus kommt in fünf Minuten.","ar":"يأتي الباص بعد خمس دقائق.","exampleDe":"Der Bus kommt in fünf Minuten.","exampleAr":"يأتي الباص بعد خمس دقائق."},{"de":"Fährt der Bus zum Bahnhof?","ar":"هل يسير الباص إلى محطة القطار؟","exampleDe":"Fährt der Bus zum Bahnhof?","exampleAr":"هل يسير الباص إلى محطة القطار؟"},{"de":"Ja, die Linie vier fährt zum Bahnhof.","ar":"نعم، الخط رقم أربعة يسير إلى المحطة.","exampleDe":"Ja, die Linie vier fährt zum Bahnhof.","exampleAr":"نعم، الخط رقم أربعة يسير إلى المحطة."},{"de":"Wo kann ich eine Fahrkarte kaufen?","ar":"أين أستطيع شراء تذكرة؟","exampleDe":"Wo kann ich eine Fahrkarte kaufen?","exampleAr":"أين أستطيع شراء تذكرة؟"},{"de":"Sie können die Fahrkarte am Automaten kaufen.","ar":"تستطيع شراء التذكرة من الماكينة.","exampleDe":"Sie können die Fahrkarte am Automaten kaufen.","exampleAr":"تستطيع شراء التذكرة من الماكينة."},{"de":"Wie viel kostet eine Fahrkarte?","ar":"كم تكلفة التذكرة؟","exampleDe":"Wie viel kostet eine Fahrkarte?","exampleAr":"كم تكلفة التذكرة؟"},{"de":"Eine Fahrkarte kostet drei Euro.","ar":"التذكرة تكلف ثلاثة يورو.","exampleDe":"Eine Fahrkarte kostet drei Euro.","exampleAr":"التذكرة تكلف ثلاثة يورو."},{"de":"Brauche ich Bargeld?","ar":"هل أحتاج إلى نقود نقدية؟","exampleDe":"Brauche ich Bargeld?","exampleAr":"هل أحتاج إلى نقود نقدية؟"},{"de":"Nein, Sie können auch mit Karte bezahlen.","ar":"لا، تستطيع أيضًا الدفع بالبطاقة.","exampleDe":"Nein, Sie können auch mit Karte bezahlen.","exampleAr":"لا، تستطيع أيضًا الدفع بالبطاقة."}]},{"id":5,"title":"In der Bank","titleAr":"في المصرف","icon":"message-circle","desc":"محادثة مستوى A1: في المصرف، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich möchte ein Konto eröffnen.","ar":"نهارك سعيد! أريد فتح حساب.","exampleDe":"Guten Tag! Ich möchte ein Konto eröffnen.","exampleAr":"نهارك سعيد! أريد فتح حساب."},{"de":"Guten Tag! Haben Sie Ihren Ausweis dabei?","ar":"نهارك سعيد! هل لديك هويتك معك؟","exampleDe":"Guten Tag! Haben Sie Ihren Ausweis dabei?","exampleAr":"نهارك سعيد! هل لديك هويتك معك؟"},{"de":"Ja, hier ist mein Ausweis.","ar":"نعم، هذه هويتي.","exampleDe":"Ja, hier ist mein Ausweis.","exampleAr":"نعم، هذه هويتي."},{"de":"Brauchen Sie eine Kreditkarte?","ar":"هل تحتاج إلى بطاقة ائتمان؟","exampleDe":"Brauchen Sie eine Kreditkarte?","exampleAr":"هل تحتاج إلى بطاقة ائتمان؟"},{"de":"Ja, ich brauche meine Kreditkarte.","ar":"نعم، أحتاج إلى بطاقتي الائتمانية.","exampleDe":"Ja, ich brauche meine Kreditkarte.","exampleAr":"نعم، أحتاج إلى بطاقتي الائتمانية."},{"de":"Bitte unterschreiben Sie hier.","ar":"من فضلك وقّع هنا.","exampleDe":"Bitte unterschreiben Sie hier.","exampleAr":"من فضلك وقّع هنا."},{"de":"Wo ist der Geldautomat?","ar":"أين ماكينة الصرف الآلي؟","exampleDe":"Wo ist der Geldautomat?","exampleAr":"أين ماكينة الصرف الآلي؟"},{"de":"Der Geldautomat ist vorne links.","ar":"ماكينة الصرف في الأمام يساراً.","exampleDe":"Der Geldautomat ist vorne links.","exampleAr":"ماكينة الصرف في الأمام يساراً."},{"de":"Kann ich Geld einzahlen?","ar":"هل أستطيع إيداع المال؟","exampleDe":"Kann ich Geld einzahlen?","exampleAr":"هل أستطيع إيداع المال؟"},{"de":"Ja, am Automaten können Sie Geld einzahlen.","ar":"نعم، يمكنك إيداع المال من الماكينة.","exampleDe":"Ja, am Automaten können Sie Geld einzahlen.","exampleAr":"نعم، يمكنك إيداع المال من الماكينة."}]},{"id":6,"title":"Die Uhrzeit","titleAr":"الوقت","icon":"message-circle","desc":"محادثة مستوى A1: الوقت، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Entschuldigung, wie viel Uhr ist es?","ar":"عفواً، كم الساعة؟","exampleDe":"Entschuldigung, wie viel Uhr ist es?","exampleAr":"عفواً، كم الساعة؟"},{"de":"Es ist jetzt Punkt zwei Uhr.","ar":"الساعة الآن الثانية تماماً.","exampleDe":"Es ist jetzt Punkt zwei Uhr.","exampleAr":"الساعة الآن الثانية تماماً."},{"de":"Wann beginnt dein Sprachkurs?","ar":"متى تبدأ دورة اللغة الخاصة بك؟","exampleDe":"Wann beginnt dein Sprachkurs?","exampleAr":"متى تبدأ دورة اللغة الخاصة بك؟"},{"de":"Mein Kurs beginnt um drei Uhr.","ar":"تبدأ دورتي الساعة الثالثة.","exampleDe":"Mein Kurs beginnt um drei Uhr.","exampleAr":"تبدأ دورتي الساعة الثالثة."},{"de":"Hast du heute Zeit?","ar":"هل لديك وقت اليوم؟","exampleDe":"Hast du heute Zeit?","exampleAr":"هل لديك وقت اليوم؟"},{"de":"Ja, ich habe am Nachmittag Zeit.","ar":"نعم، لدي وقت بعد الظهر.","exampleDe":"Ja, ich habe am Nachmittag Zeit.","exampleAr":"نعم، لدي وقت بعد الظهر."},{"de":"Wann treffen wir uns?","ar":"متى نلتقي؟","exampleDe":"Wann treffen wir uns?","exampleAr":"متى نلتقي؟"},{"de":"Wir treffen uns um vier Uhr.","ar":"نلتقي الساعة الرابعة.","exampleDe":"Wir treffen uns um vier Uhr.","exampleAr":"نلتقي الساعة الرابعة."},{"de":"Ist das nicht zu spät?","ar":"أليس هذا متأخراً جداً؟","exampleDe":"Ist das nicht zu spät?","exampleAr":"أليس هذا متأخراً جداً؟"},{"de":"Nein, das ist pünktlich.","ar":"لا، هذا في الوقت المحدد.","exampleDe":"Nein, das ist pünktlich.","exampleAr":"لا، هذا في الوقت المحدد."}]},{"id":7,"title":"Die Familie","titleAr":"العائلة","icon":"message-circle","desc":"محادثة مستوى A1: العائلة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hast du eine große Familie?","ar":"هل لديك عائلة كبيرة؟","exampleDe":"Hast du eine große Familie?","exampleAr":"هل لديك عائلة كبيرة؟"},{"de":"Ja, meine Familie ist sehr groß.","ar":"نعم، عائلتي كبيرة جداً.","exampleDe":"Ja, meine Familie ist sehr groß.","exampleAr":"نعم، عائلتي كبيرة جداً."},{"de":"Hast du Geschwister?","ar":"هل لديك إخوة؟","exampleDe":"Hast du Geschwister?","exampleAr":"هل لديك إخوة؟"},{"de":"Ja, ich habe einen Bruder und eine Schwester.","ar":"نعم، لدي أخ وأخت.","exampleDe":"Ja, ich habe einen Bruder und eine Schwester.","exampleAr":"نعم، لدي أخ وأخت."},{"de":"Wie heißt dein Bruder?","ar":"ما اسم أخيك؟","exampleDe":"Wie heißt dein Bruder?","exampleAr":"ما اسم أخيك؟"},{"de":"Mein Bruder heißt Ahmed.","ar":"أخي اسمه أحمد.","exampleDe":"Mein Bruder heißt Ahmed.","exampleAr":"أخي اسمه أحمد."},{"de":"Lebt deine Familie in Deutschland?","ar":"هل تعيش عائلتك في ألمانيا؟","exampleDe":"Lebt deine Familie in Deutschland?","exampleAr":"هل تعيش عائلتك في ألمانيا؟"},{"de":"Nein, meine Eltern leben im Irak.","ar":"لا، والداي يعيشان في العراق.","exampleDe":"Nein, meine Eltern leben im Irak.","exampleAr":"لا، والداي يعيشان في العراق."},{"de":"Besuchst du deine Eltern oft?","ar":"هل تزور والديك كثيراً؟","exampleDe":"Besuchst du deine Eltern oft?","exampleAr":"هل تزور والديك كثيراً؟"},{"de":"Ja, ich besuche meine Eltern im Sommer.","ar":"نعم، أزور والديّ في الصيف.","exampleDe":"Ja, ich besuche meine Eltern im Sommer.","exampleAr":"نعم، أزور والديّ في الصيف."}]},{"id":8,"title":"Die Liebe","titleAr":"الحب","icon":"message-circle","desc":"محادثة مستوى A1: الحب، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Bist du verliebt, Noor?","ar":"هل أنتِ مغرمة يا نور؟","exampleDe":"Bist du verliebt, Noor?","exampleAr":"هل أنتِ مغرمة يا نور؟"},{"de":"Ja, ich bin sehr verliebt!","ar":"نعم، أنا مغرمة جداً!","exampleDe":"Ja, ich bin sehr verliebt!","exampleAr":"نعم، أنا مغرمة جداً!"},{"de":"Wer ist der Glückliche?","ar":"من هو المحظوظ؟","exampleDe":"Wer ist der Glückliche?","exampleAr":"من هو المحظوظ؟"},{"de":"Mein Freund heißt Omar. Er ist sehr nett.","ar":"اسم صديقي عمر، وهو لطيف جداً.","exampleDe":"Mein Freund heißt Omar. Er ist sehr nett.","exampleAr":"اسم صديقي عمر، وهو لطيف جداً."},{"de":"Liebst du ihn sehr?","ar":"هل تحبينه كثيراً؟","exampleDe":"Liebst du ihn sehr?","exampleAr":"هل تحبينه كثيراً؟"},{"de":"Ja, ich liebe ihn von ganzem Herzen.","ar":"نعم، أنا أحبه من كل قلبي.","exampleDe":"Ja, ich liebe ihn von ganzem Herzen.","exampleAr":"نعم، أنا أحبه من كل قلبي."},{"de":"Schenkt er dir oft Blumen?","ar":"هل يهديكِ الزهور كثيراً؟","exampleDe":"Schenkt er dir oft Blumen?","exampleAr":"هل يهديكِ الزهور كثيراً؟"},{"de":"Ja, er bringt mir immer rote Rosen.","ar":"نعم، يجلب لي دائماً وروداً حمراء.","exampleDe":"Ja, er bringt mir immer rote Rosen.","exampleAr":"نعم، يجلب لي دائماً وروداً حمراء."},{"de":"Das ist sehr romantisch!","ar":"هذا رومانسي جداً!","exampleDe":"Das ist sehr romantisch!","exampleAr":"هذا رومانسي جداً!"},{"de":"Ja, die Liebe ist wunderschön.","ar":"نعم، الحب جميل جداً.","exampleDe":"Ja, die Liebe ist wunderschön.","exampleAr":"نعم، الحب جميل جداً."}]},{"id":9,"title":"Die Freundschaft","titleAr":"الصداقة","icon":"message-circle","desc":"محادثة مستوى A1: الصداقة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Wer ist dein bester Freund?","ar":"من هو أفضل صديق لديك؟","exampleDe":"Wer ist dein bester Freund?","exampleAr":"من هو أفضل صديق لديك؟"},{"de":"Meine beste Freundin heißt Sarah.","ar":"اسم أفضل صديقة لدي سارة.","exampleDe":"Meine beste Freundin heißt Sarah.","exampleAr":"اسم أفضل صديقة لدي سارة."},{"de":"Seit wann kennt ihr euch?","ar":"منذ متى تعرفان بعضكما؟","exampleDe":"Seit wann kennt ihr euch?","exampleAr":"منذ متى تعرفان بعضكما؟"},{"de":"Wir kennen uns seit fünf Jahren.","ar":"نحن نعرف بعضنا منذ خمس سنوات.","exampleDe":"Wir kennen uns seit fünf Jahren.","exampleAr":"نحن نعرف بعضنا منذ خمس سنوات."},{"de":"Was macht ihr zusammen?","ar":"ماذا تفعلان معاً؟","exampleDe":"Was macht ihr zusammen?","exampleAr":"ماذا تفعلان معاً؟"},{"de":"Wir trinken Kaffee und reden viel.","ar":"نشرب القهوة ونتحدث كثيراً.","exampleDe":"Wir trinken Kaffee und reden viel.","exampleAr":"نشرب القهوة ونتحدث كثيراً."},{"de":"Hilft sie dir immer?","ar":"هل تساعدك دائماً؟","exampleDe":"Hilft sie dir immer?","exampleAr":"هل تساعدك دائماً؟"},{"de":"Ja, gute Freunde helfen immer.","ar":"نعم، الأصدقاء الجيدون يساعدون دائماً.","exampleDe":"Ja, gute Freunde helfen immer.","exampleAr":"نعم، الأصدقاء الجيدون يساعدون دائماً."},{"de":"Freundschaft ist sehr wichtig im Leben.","ar":"الصداقة مهمة جداً في الحياة.","exampleDe":"Freundschaft ist sehr wichtig im Leben.","exampleAr":"الصداقة مهمة جداً في الحياة."},{"de":"Richtig, ohne Freunde ist man einsam.","ar":"صحيح، من دون أصدقاء يكون المرء وحيداً.","exampleDe":"Richtig, ohne Freunde ist man einsam.","exampleAr":"صحيح، من دون أصدقاء يكون المرء وحيداً."}]},{"id":10,"title":"Im Restaurant","titleAr":"في المطعم","icon":"message-circle","desc":"محادثة مستوى A1: في المطعم، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Haben Sie einen Tisch frei?","ar":"نهارك سعيد! هل لديك طاولة فارغة؟","exampleDe":"Guten Tag! Haben Sie einen Tisch frei?","exampleAr":"نهارك سعيد! هل لديك طاولة فارغة؟"},{"de":"Ja, hier ist ein Tisch für zwei Personen.","ar":"نعم، هنا طاولة لشخصين.","exampleDe":"Ja, hier ist ein Tisch für zwei Personen.","exampleAr":"نعم، هنا طاولة لشخصين."},{"de":"Danke! Kann ich die Speisekarte haben?","ar":"شكراً! هل أستطيع الحصول على قائمة الطعام؟","exampleDe":"Danke! Kann ich die Speisekarte haben?","exampleAr":"شكراً! هل أستطيع الحصول على قائمة الطعام؟"},{"de":"Hier ist die Speisekarte. Was möchten Sie trinken?","ar":"تفضل قائمة الطعام. ماذا ترغب أن تشرب؟","exampleDe":"Hier ist die Speisekarte. Was möchten Sie trinken?","exampleAr":"تفضل قائمة الطعام. ماذا ترغب أن تشرب؟"},{"de":"Ich möchte ein Wasser trinken.","ar":"أريد شرب الماء.","exampleDe":"Ich möchte ein Wasser trinken.","exampleAr":"أريد شرب الماء."},{"de":"Und was möchten Sie essen?","ar":"وماذا ترغب أن تأكل؟","exampleDe":"Und was möchten Sie essen?","exampleAr":"وماذا ترغب أن تأكل؟"},{"de":"Ich nehme eine Suppe und eine Pizza.","ar":"سآخذ حساءً وبيتزا.","exampleDe":"Ich nehme eine Suppe und eine Pizza.","exampleAr":"سآخذ حساءً وبيتزا."},{"de":"Schmeckt das Essen gut?","ar":"هل مذاق الطعام جيد؟","exampleDe":"Schmeckt das Essen gut?","exampleAr":"هل مذاق الطعام جيد؟"},{"de":"Ja, das Essen schmeckt sehr lecker!","ar":"نعم، الطعام لذيذ جداً!","exampleDe":"Ja, das Essen schmeckt sehr lecker!","exampleAr":"نعم، الطعام لذيذ جداً!"},{"de":"Möchten Sie bezahlen? Das macht zehn Euro.","ar":"هل ترغب في الدفع؟ المجموع عشرة يورو.","exampleDe":"Möchten Sie bezahlen? Das macht zehn Euro.","exampleAr":"هل ترغب في الدفع؟ المجموع عشرة يورو."}]},{"id":11,"title":"Im Supermarkt","titleAr":"في السوبرماركت","icon":"message-circle","desc":"محادثة مستوى A1: في السوبرماركت، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Entschuldigung, wo finde ich die Milch?","ar":"عفواً، أين أجد الحليب؟","exampleDe":"Entschuldigung, wo finde ich die Milch?","exampleAr":"عفواً، أين أجد الحليب؟"},{"de":"Die Milch steht im Regal hinten.","ar":"الحليب موجود في الرف في الخلف.","exampleDe":"Die Milch steht im Regal hinten.","exampleAr":"الحليب موجود في الرف في الخلف."},{"de":"Danke! Was kostet ein Kilo Äpfel?","ar":"شكراً! كم تكلف كيلو التفاح؟","exampleDe":"Danke! Was kostet ein Kilo Äpfel?","exampleAr":"شكراً! كم تكلف كيلو التفاح؟"},{"de":"Ein Kilo Äpfel kostet zwei Euro.","ar":"كيلو التفاح يكلف يوروَين.","exampleDe":"Ein Kilo Äpfel kostet zwei Euro.","exampleAr":"كيلو التفاح يكلف يوروَين."},{"de":"Ich brauche auch ein Brot.","ar":"أحتاج أيضاً إلى خبز.","exampleDe":"Ich brauche auch ein Brot.","exampleAr":"أحتاج أيضاً إلى خبز."},{"de":"Das Brot finden Sie beim Bäckerei-Stand.","ar":"تجد الخبز عند كاونتر المخبوزات.","exampleDe":"Das Brot finden Sie beim Bäckerei-Stand.","exampleAr":"تجد الخبز عند كاونتر المخبوزات."},{"de":"Haben Sie frische Eier?","ar":"هل لديك بيض طازج؟","exampleDe":"Haben Sie frische Eier?","exampleAr":"هل لديك بيض طازج؟"},{"de":"Ja, die Eier sind im Kühlregal.","ar":"نعم، البيض في رف التبريد.","exampleDe":"Ja, die Eier sind im Kühlregal.","exampleAr":"نعم، البيض في رف التبريد."},{"de":"Wo ist die Kasse?","ar":"أين الصندوق (الكاشير)؟","exampleDe":"Wo ist die Kasse?","exampleAr":"أين الصندوق (الكاشير)؟"},{"de":"Die Kasse ist dort vorne.","ar":"الصندوق هناك في الأمام.","exampleDe":"Die Kasse ist dort vorne.","exampleAr":"الصندوق هناك في الأمام."}]},{"id":12,"title":"Polizei und Hilfe","titleAr":"الشرطة وطلب المساعدة","icon":"message-circle","desc":"محادثة مستوى A1: الشرطة وطلب المساعدة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hilfe! Rufen Sie bitte die Polizei!","ar":"النجدة! اتصلوا بالشرطة من فضلكم!","exampleDe":"Hilfe! Rufen Sie bitte die Polizei!","exampleAr":"النجدة! اتصلوا بالشرطة من فضلكم!"},{"de":"Hallo, hier ist die Polizei. Was ist passiert?","ar":"مرحباً، معك الشرطة. ماذا حدث؟","exampleDe":"Hallo, hier ist die Polizei. Was ist passiert?","exampleAr":"مرحباً، معك الشرطة. ماذا حدث؟"},{"de":"Mein Portemonnaie ist weg!","ar":"محفظتي مفقودة!","exampleDe":"Mein Portemonnaie ist weg!","exampleAr":"محفظتي مفقودة!"},{"de":"Wo sind Sie jetzt?","ar":"أين أنت الآن؟","exampleDe":"Wo sind Sie jetzt?","exampleAr":"أين أنت الآن؟"},{"de":"Ich bin am Hauptbahnhof.","ar":"أنا في محطة القطار الرئيسية.","exampleDe":"Ich bin am Hauptbahnhof.","exampleAr":"أنا في محطة القطار الرئيسية."},{"de":"Wie sieht Ihr Portemonnaie aus?","ar":"كيف تبدو محفظتك؟","exampleDe":"Wie sieht Ihr Portemonnaie aus?","exampleAr":"كيف تبدو محفظتك؟"},{"de":"Es ist schwarz und aus Leder.","ar":"إنها سوداء ومصنوعة من الجلد.","exampleDe":"Es ist schwarz und aus Leder.","exampleAr":"إنها سوداء ومصنوعة من الجلد."},{"de":"War Geld in der Tasche?","ar":"هل كان هناك مال في الحقيبة؟","exampleDe":"War Geld in der Tasche?","exampleAr":"هل كان هناك مال في الحقيبة؟"},{"de":"Ja, fünfzig Euro und meine Karten.","ar":"نعم، خمسون يورو وبطاقاتي.","exampleDe":"Ja, fünfzig Euro und meine Karten.","exampleAr":"نعم، خمسون يورو وبطاقاتي."},{"de":"Eine Streife kommt sofort zu Ihnen.","ar":"ستأتي إليك دورية شرطة فوراً.","exampleDe":"Eine Streife kommt sofort zu Ihnen.","exampleAr":"ستأتي إليك دورية شرطة فوراً."}]},{"id":13,"title":"Beim Arzt","titleAr":"عند الطبيب","icon":"message-circle","desc":"محادثة مستوى A1: عند الطبيب، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag, Herr Doktor! Ich bin krank.","ar":"نهارك سعيد يا دكتور! أنا مريض.","exampleDe":"Guten Tag, Herr Doktor! Ich bin krank.","exampleAr":"نهارك سعيد يا دكتور! أنا مريض."},{"de":"Guten Tag! Was fehlt Ihnen denn?","ar":"نهارك سعيد! ما الذي يؤلمك؟","exampleDe":"Guten Tag! Was fehlt Ihnen denn?","exampleAr":"نهارك سعيد! ما الذي يؤلمك؟"},{"de":"Ich habe Kopfschmerzen und Fieber.","ar":"لدي صداع وحمى.","exampleDe":"Ich habe Kopfschmerzen und Fieber.","exampleAr":"لدي صداع وحمى."},{"de":"Seit wann haben Sie Schmerzen?","ar":"منذ متى تشعر بالألم؟","exampleDe":"Seit wann haben Sie Schmerzen?","exampleAr":"منذ متى تشعر بالألم؟"},{"de":"Seit gestern Abend habe ich Bauchschmerzen.","ar":"أعاني من ألم في البطن منذ مساء أمس.","exampleDe":"Seit gestern Abend habe ich Bauchschmerzen.","exampleAr":"أعاني من ألم في البطن منذ مساء أمس."},{"de":"Machen Sie bitte den Mund auf.","ar":"افتح فمك من فضلك.","exampleDe":"Machen Sie bitte den Mund auf.","exampleAr":"افتح فمك من فضلك."},{"de":"Ist es eine Grippe?","ar":"هل هي إنفلونزا؟","exampleDe":"Ist es eine Grippe?","exampleAr":"هل هي إنفلونزا؟"},{"de":"Ja, Sie haben eine Erkältung.","ar":"نعم، لديك نزلة برد.","exampleDe":"Ja, Sie haben eine Erkältung.","exampleAr":"نعم، لديك نزلة برد."},{"de":"Brauche ich Medikamente?","ar":"هل أحتاج إلى أدوية؟","exampleDe":"Brauche ich Medikamente?","exampleAr":"هل أحتاج إلى أدوية؟"},{"de":"Hier ist Ihr Rezept. Trinken Sie viel Tee!","ar":"هذه وصفتك الطبية. اشرب الكثير من الشاي!","exampleDe":"Hier ist Ihr Rezept. Trinken Sie viel Tee!","exampleAr":"هذه وصفتك الطبية. اشرب الكثير من الشاي!"}]},{"id":14,"title":"In der Apotheke","titleAr":"في الصيدلية","icon":"message-circle","desc":"محادثة مستوى A1: في الصيدلية، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich brauche Schmerzmittel.","ar":"نهارك سعيد! أحتاج إلى مسكنات للألم.","exampleDe":"Guten Tag! Ich brauche Schmerzmittel.","exampleAr":"نهارك سعيد! أحتاج إلى مسكنات للألم."},{"de":"Guten Tag! Haben Sie ein Rezept vom Arzt?","ar":"نهارك سعيد! هل لديك وصفة من الطبيب؟","exampleDe":"Guten Tag! Haben Sie ein Rezept vom Arzt?","exampleAr":"نهارك سعيد! هل لديك وصفة من الطبيب؟"},{"de":"Ja, hier ist mein Rezept.","ar":"نعم، هذه وصفتي الطبية.","exampleDe":"Ja, hier ist mein Rezept.","exampleAr":"نعم، هذه وصفتي الطبية."},{"de":"Nehmen Sie diese Tabletten zweimal täglich.","ar":"تناول هذه الأقراص مرتين يومياً.","exampleDe":"Nehmen Sie diese Tabletten zweimal täglich.","exampleAr":"تناول هذه الأقراص مرتين يومياً."},{"de":"Muss ich die Tabletten vor dem Essen nehmen?","ar":"هل يجب أن أتناول الأقراص قبل الطعام؟","exampleDe":"Muss ich die Tabletten vor dem Essen nehmen?","exampleAr":"هل يجب أن أتناول الأقراص قبل الطعام؟"},{"de":"Ja, nehmen Sie die Tabletten nach dem Essen.","ar":"نعم، تناول الأقراص بعد الطعام.","exampleDe":"Ja, nehmen Sie die Tabletten nach dem Essen.","exampleAr":"نعم، تناول الأقراص بعد الطعام."},{"de":"Haben Sie auch etwas gegen Husten?","ar":"هل لديك أيضاً شيء للسعال؟","exampleDe":"Haben Sie auch etwas gegen Husten?","exampleAr":"هل لديك أيضاً شيء للسعال؟"},{"de":"Ja, dieser Hustensaft hilft sehr gut.","ar":"نعم، شراب السعال هذا مفيد جداً.","exampleDe":"Ja, dieser Hustensaft hilft sehr gut.","exampleAr":"نعم، شراب السعال هذا مفيد جداً."},{"de":"Wie viel kostet der Hustensaft?","ar":"كم سعر شراب السعال؟","exampleDe":"Wie viel kostet der Hustensaft?","exampleAr":"كم سعر شراب السعال؟"},{"de":"Der Saft kostet fünf Euro.","ar":"سعر الشراب خمسة يورو.","exampleDe":"Der Saft kostet fünf Euro.","exampleAr":"سعر الشراب خمسة يورو."}]},{"id":15,"title":"Wohnungssuche","titleAr":"البحث عن شقة","icon":"message-circle","desc":"محادثة مستوى A1: البحث عن شقة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich suche eine Wohnung.","ar":"نهارك سعيد! أبحث عن شقة.","exampleDe":"Guten Tag! Ich suche eine Wohnung.","exampleAr":"نهارك سعيد! أبحث عن شقة."},{"de":"Wie groß soll die Wohnung sein?","ar":"ما حجم الشقة التي تريدها؟","exampleDe":"Wie groß soll die Wohnung sein?","exampleAr":"ما حجم الشقة التي تريدها؟"},{"de":"Ich brauche zwei Zimmer und eine Küche.","ar":"أحتاج إلى غرفتين ومطبخ.","exampleDe":"Ich brauche zwei Zimmer und eine Küche.","exampleAr":"أحتاج إلى غرفتين ومطبخ."},{"de":"Wie viel Kaltmiete möchten Sie bezahlen?","ar":"كم تريد أن تدفع إيجاراً أساسياً من دون تكاليف إضافية؟","exampleDe":"Wie viel Kaltmiete möchten Sie bezahlen?","exampleAr":"كم تريد أن تدفع إيجاراً أساسياً من دون تكاليف إضافية؟"},{"de":"Die Miete soll fünfhundert Euro kosten.","ar":"أريد أن يكون الإيجار خمسمئة يورو.","exampleDe":"Die Miete soll fünfhundert Euro kosten.","exampleAr":"أريد أن يكون الإيجار خمسمئة يورو."},{"de":"Hat die Wohnung einen Balkon?","ar":"هل تحتوي الشقة على شرفة؟","exampleDe":"Hat die Wohnung einen Balkon?","exampleAr":"هل تحتوي الشقة على شرفة؟"},{"de":"Ja, ein Balkon ist mir sehr wichtig.","ar":"نعم، الشرفة مهمة جداً بالنسبة لي.","exampleDe":"Ja, ein Balkon ist mir sehr wichtig.","exampleAr":"نعم، الشرفة مهمة جداً بالنسبة لي."},{"de":"Sind Haustiere in der Wohnung erlaubt?","ar":"هل يُسمح بالحيوانات الأليفة في الشقة؟","exampleDe":"Sind Haustiere in der Wohnung erlaubt?","exampleAr":"هل يُسمح بالحيوانات الأليفة في الشقة؟"},{"de":"Nein, ich habe keine Haustiere.","ar":"لا، ليس لدي حيوانات أليفة.","exampleDe":"Nein, ich habe keine Haustiere.","exampleAr":"لا، ليس لدي حيوانات أليفة."},{"de":"Wann können Sie die Wohnung besichtigen?","ar":"متى يمكنك معاينة الشقة؟","exampleDe":"Wann können Sie die Wohnung besichtigen?","exampleAr":"متى يمكنك معاينة الشقة؟"}]},{"id":16,"title":"Im Kleidungsgeschäft","titleAr":"في متجر الملابس","icon":"message-circle","desc":"محادثة مستوى A1: في متجر الملابس، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich suche eine Hose.","ar":"نهارك سعيد! أنا أبحث عن بنطال.","exampleDe":"Guten Tag! Ich suche eine Hose.","exampleAr":"نهارك سعيد! أنا أبحث عن بنطال."},{"de":"Welche Größe tragen Sie?","ar":"ما المقاس الذي ترتديه؟","exampleDe":"Welche Größe tragen Sie?","exampleAr":"ما المقاس الذي ترتديه؟"},{"de":"Ich trage die Größe L.","ar":"أرتدي المقاس L.","exampleDe":"Ich trage die Größe L.","exampleAr":"أرتدي المقاس L."},{"de":"Welche Farbe gefällt Ihnen?","ar":"ما اللون الذي يعجبك؟","exampleDe":"Welche Farbe gefällt Ihnen?","exampleAr":"ما اللون الذي يعجبك؟"},{"de":"Ich möchte eine blaue Jeans.","ar":"أرغب بنطال جينز أزرق.","exampleDe":"Ich möchte eine blaue Jeans.","exampleAr":"أرغب بنطال جينز أزرق."},{"de":"Hier ist eine schöne Jeans. Probieren Sie sie an!","ar":"ها هنا جينز جميل. جرّبه!","exampleDe":"Hier ist eine schöne Jeans. Probieren Sie sie an!","exampleAr":"ها هنا جينز جميل. جرّبه!"},{"de":"Wo ist die Umkleidekabine?","ar":"أين غرفة قياس الملابس؟","exampleDe":"Wo ist die Umkleidekabine?","exampleAr":"أين غرفة قياس الملابس؟"},{"de":"Die Kabine ist da drüben.","ar":"غرفة القياس هناك في ذلك الجانب.","exampleDe":"Die Kabine ist da drüben.","exampleAr":"غرفة القياس هناك في ذلك الجانب."},{"de":"Die Hose passt perfekt. Ich nehme sie.","ar":"البنطال يناسبني تمامًا. سأخذه.","exampleDe":"Die Hose passt perfekt. Ich nehme sie.","exampleAr":"البنطال يناسبني تمامًا. سأخذه."},{"de":"Das macht vierzig Euro an der Kasse.","ar":"الحساب أربعون يورو عند الصندوق.","exampleDe":"Das macht vierzig Euro an der Kasse.","exampleAr":"الحساب أربعون يورو عند الصندوق."}]},{"id":17,"title":"Im Hotel","titleAr":"في الفندق","icon":"message-circle","desc":"محادثة مستوى A1: في الفندق، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich habe ein Zimmer reserviert.","ar":"نهارك سعيد! لقد حجزت غرفة.","exampleDe":"Guten Tag! Ich habe ein Zimmer reserviert.","exampleAr":"نهارك سعيد! لقد حجزت غرفة."},{"de":"Wie ist Ihr Name, bitte?","ar":"ما اسم حضرتك من فضلك؟","exampleDe":"Wie ist Ihr Name, bitte?","exampleAr":"ما اسم حضرتك من فضلك؟"},{"de":"Mein Name ist Ali Khalil.","ar":"اسمي علي خليل.","exampleDe":"Mein Name ist Ali Khalil.","exampleAr":"اسمي علي خليل."},{"de":"Ja, ein Einzelzimmer für zwei Nächte.","ar":"نعم، غرفة مفردة لليلتين.","exampleDe":"Ja, ein Einzelzimmer für zwei Nächte.","exampleAr":"نعم، غرفة مفردة لليلتين."},{"de":"Ist das Frühstück im Preis enthalten?","ar":"هل الإفطار مشمول في السعر؟","exampleDe":"Ist das Frühstück im Preis enthalten?","exampleAr":"هل الإفطار مشمول في السعر؟"},{"de":"Ja, das Frühstück ist von sieben bis zehn Uhr.","ar":"نعم، الإفطار من الساعة السابعة حتى العاشرة.","exampleDe":"Ja, das Frühstück ist von sieben bis zehn Uhr.","exampleAr":"نعم، الإفطار من الساعة السابعة حتى العاشرة."},{"de":"Gibt es WLAN im Zimmer?","ar":"هل يوجد واي فاي في الغرفة؟","exampleDe":"Gibt es WLAN im Zimmer?","exampleAr":"هل يوجد واي فاي في الغرفة؟"},{"de":"Ja, hier ist das WLAN-Passwort.","ar":"نعم، تفضل كلمة سر الواي فاي.","exampleDe":"Ja, hier ist das WLAN-Passwort.","exampleAr":"نعم، تفضل كلمة سر الواي فاي."},{"de":"Wo ist der Aufzug?","ar":"أين المصعد؟","exampleDe":"Wo ist der Aufzug?","exampleAr":"أين المصعد؟"},{"de":"Der Aufzug ist direkt um die Ecke. Hier ist Ihr Schlüssel.","ar":"المصعد خلف الزاوية مباشرة. تفضل مفتاحك.","exampleDe":"Der Aufzug ist direkt um die Ecke. Hier ist Ihr Schlüssel.","exampleAr":"المصعد خلف الزاوية مباشرة. تفضل مفتاحك."}]},{"id":18,"title":"Nach dem Weg fragen","titleAr":"السؤال عن الطريق","icon":"message-circle","desc":"محادثة مستوى A1: السؤال عن الطريق، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Entschuldigung, wo ist die Post?","ar":"عفوًا، أين مكتب البريد؟","exampleDe":"Entschuldigung, wo ist die Post?","exampleAr":"عفوًا، أين مكتب البريد؟"},{"de":"Die Post ist nicht weit von hier.","ar":"مكتب البريد ليس بعيدًا من هنا.","exampleDe":"Die Post ist nicht weit von hier.","exampleAr":"مكتب البريد ليس بعيدًا من هنا."},{"de":"Wie komme ich dorthin?","ar":"كيف أصل إلى هناك؟","exampleDe":"Wie komme ich dorthin?","exampleAr":"كيف أصل إلى هناك؟"},{"de":"Gehen Sie geradeaus und dann links.","ar":"اذهب مباشرة ثم يسارًا.","exampleDe":"Gehen Sie geradeaus und dann links.","exampleAr":"اذهب مباشرة ثم يسارًا."},{"de":"Ist das Museum in der Nähe?","ar":"هل المتحف بالقرب من هنا؟","exampleDe":"Ist das Museum in der Nähe?","exampleAr":"هل المتحف بالقرب من هنا؟"},{"de":"Ja, das Museum ist gegenüber dem Park.","ar":"نعم، المتحف مقابل الحديقة.","exampleDe":"Ja, das Museum ist gegenüber dem Park.","exampleAr":"نعم، المتحف مقابل الحديقة."},{"de":"Kann ich zu Fuß gehen?","ar":"هل أستطيع الذهاب مشيًا على الأقدام؟","exampleDe":"Kann ich zu Fuß gehen?","exampleAr":"هل أستطيع الذهاب مشيًا على الأقدام؟"},{"de":"Ja, das dauert nur fünf Minuten.","ar":"نعم، هذا يستغرق خمس دقائق فقط.","exampleDe":"Ja, das dauert nur fünf Minuten.","exampleAr":"نعم، هذا يستغرق خمس دقائق فقط."},{"de":"Muss ich die Straße überqueren?","ar":"هل يجب عليّ عبور الشارع؟","exampleDe":"Muss ich die Straße überqueren?","exampleAr":"هل يجب عليّ عبور الشارع؟"},{"de":"Ja, an der Ampel gehen Sie über die Straße.","ar":"نعم، عند الإشارة الضوئية اذهب عبر الشارع.","exampleDe":"Ja, an der Ampel gehen Sie über die Straße.","exampleAr":"نعم، عند الإشارة الضوئية اذهب عبر الشارع."}]},{"id":19,"title":"Das Wetter","titleAr":"الطقس","icon":"message-circle","desc":"محادثة مستوى A1: الطقس، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Wie ist das Wetter heute?","ar":"كيف حال الطقس اليوم؟","exampleDe":"Wie ist das Wetter heute?","exampleAr":"كيف حال الطقس اليوم؟"},{"de":"Heute scheint die Sonne und es ist warm.","ar":"اليوم تشرق الشمس والجو دافئ.","exampleDe":"Heute scheint die Sonne und es ist warm.","exampleAr":"اليوم تشرق الشمس والجو دافئ."},{"de":"Wie viel Grad haben wir?","ar":"كم درجة الحرارة لدينا؟","exampleDe":"Wie viel Grad haben wir?","exampleAr":"كم درجة الحرارة لدينا؟"},{"de":"Wir haben heute zwanzig Grad.","ar":"لدينا اليوم عشرون درجة.","exampleDe":"Wir haben heute zwanzig Grad.","exampleAr":"لدينا اليوم عشرون درجة."},{"de":"Regnet es morgen?","ar":"هل تمطر غدًا؟","exampleDe":"Regnet es morgen?","exampleAr":"هل تمطر غدًا؟"},{"de":"Ja, morgen regnet es den ganzen Tag.","ar":"نعم، غدًا تمطر طوال اليوم.","exampleDe":"Ja, morgen regnet es den ganzen Tag.","exampleAr":"نعم، غدًا تمطر طوال اليوم."},{"de":"Brauche ich einen Regenschirm?","ar":"هل أحتاج مظلة مطر؟","exampleDe":"Brauche ich einen Regenschirm?","exampleAr":"هل أحتاج مظلة مطر؟"},{"de":"Ja, nimm lieber deinen Regenschirm mit.","ar":"نعم، خذ مظلتك معك أفضل.","exampleDe":"Ja, nimm lieber deinen Regenschirm mit.","exampleAr":"نعم، خذ مظلتك معك أفضل."},{"de":"Ist es im Winter sehr kalt?","ar":"هل الجو بارد جدًا في الشتاء؟","exampleDe":"Ist es im Winter sehr kalt?","exampleAr":"هل الجو بارد جدًا في الشتاء؟"},{"de":"Ja, im Winter schneit es oft.","ar":"نعم، في الشتاء تثلج كثيرًا.","exampleDe":"Ja, im Winter schneit es oft.","exampleAr":"نعم، في الشتاء تثلج كثيرًا."}]},{"id":20,"title":"Hobbys und Freizeit","titleAr":"الهوايات ووقت الفراغ","icon":"message-circle","desc":"محادثة مستوى A1: الهوايات ووقت الفراغ، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Was sind deine Hobbys?","ar":"ما هي هواياتك؟","exampleDe":"Was sind deine Hobbys?","exampleAr":"ما هي هواياتك؟"},{"de":"Ich spiele gerne Fußball und lese Bücher.","ar":"أحب لعب كرة القدم وقراءة الكتب.","exampleDe":"Ich spiele gerne Fußball und lese Bücher.","exampleAr":"أحب لعب كرة القدم وقراءة الكتب."},{"de":"Treibst du oft Sport?","ar":"هل تمارس الرياضة كثيرًا؟","exampleDe":"Treibst du oft Sport?","exampleAr":"هل تمارس الرياضة كثيرًا؟"},{"de":"Ja, ich schwimme jeden Samstag.","ar":"نعم، أنا أسبح كل يوم سبت.","exampleDe":"Ja, ich schwimme jeden Samstag.","exampleAr":"نعم، أنا أسبح كل يوم سبت."},{"de":"Hörst du gerne Musik?","ar":"هل تحب سماع الموسيقى؟","exampleDe":"Hörst du gerne Musik?","exampleAr":"هل تحب سماع الموسيقى؟"},{"de":"Ja, ich höre immer Popmusik.","ar":"نعم، أنا أستمع دائمًا لموسيقى البوب.","exampleDe":"Ja, ich höre immer Popmusik.","exampleAr":"نعم، أنا أستمع دائمًا لموسيقى البوب."},{"de":"Gehst du am Wochenende ins Kino?","ar":"هل تذهب إلى السينما في نهاية الأسبوع؟","exampleDe":"Gehst du am Wochenende ins Kino?","exampleAr":"هل تذهب إلى السينما في نهاية الأسبوع؟"},{"de":"Ja, ich sehe gerne Filme.","ar":"نعم، أنا أحب مشاهدة الأفلام.","exampleDe":"Ja, ich sehe gerne Filme.","exampleAr":"نعم، أنا أحب مشاهدة الأفلام."},{"de":"Kochen wir zusammen am Sonntag?","ar":"هل نطبخ معًا يوم الأحد؟","exampleDe":"Kochen wir zusammen am Sonntag?","exampleAr":"هل نطبخ معًا يوم الأحد؟"},{"de":"Ja, das macht sehr viel Spaß!","ar":"نعم، هذا ممتع جدًا!","exampleDe":"Ja, das macht sehr viel Spaß!","exampleAr":"نعم، هذا ممتع جدًا!"}]},{"id":21,"title":"Im Café","titleAr":"في المقهى","icon":"message-circle","desc":"محادثة مستوى A1: في المقهى، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hallo! Ich möchte einen Kaffee bestellen.","ar":"مرحبًا! أرغب في طلب قهوة.","exampleDe":"Hallo! Ich möchte einen Kaffee bestellen.","exampleAr":"مرحبًا! أرغب في طلب قهوة."},{"de":"Möchten Sie den Kaffee mit Milch und Zucker?","ar":"هل ترغب بالقهوة مع حليب وسكر؟","exampleDe":"Möchten Sie den Kaffee mit Milch und Zucker?","exampleAr":"هل ترغب بالقهوة مع حليب وسكر؟"},{"de":"Ja, bitte mit wenig Zucker.","ar":"نعم، من فضلك مع القليل من السكر.","exampleDe":"Ja, bitte mit wenig Zucker.","exampleAr":"نعم، من فضلك مع القليل من السكر."},{"de":"Möchten Sie auch ein Stück Kuchen?","ar":"هل ترغب أيضًا بقطعة كعك؟","exampleDe":"Möchten Sie auch ein Stück Kuchen?","exampleAr":"هل ترغب أيضًا بقطعة كعك؟"},{"de":"Ja, ich nehme einen Apfelkuchen.","ar":"نعم، سآخذ كعك التفاح.","exampleDe":"Ja, ich nehme einen Apfelkuchen.","exampleAr":"نعم، سآخذ كعك التفاح."},{"de":"Möchten Sie einen Tee trinken?","ar":"هل ترغب بشرب شاي؟","exampleDe":"Möchten Sie einen Tee trinken?","exampleAr":"هل ترغب بشرب شاي؟"},{"de":"Nein danke, nur den Kaffee.","ar":"لا شكرًا، فقط القهوة.","exampleDe":"Nein danke, nur den Kaffee.","exampleAr":"لا شكرًا، فقط القهوة."},{"de":"Ist das alles für heute?","ar":"هل هذا كل شيء اليوم؟","exampleDe":"Ist das alles für heute?","exampleAr":"هل هذا كل شيء اليوم؟"},{"de":"Ja, was kostet das zusammen?","ar":"نعم، كم يكلف هذا مجتمعًا؟","exampleDe":"Ja, was kostet das zusammen?","exampleAr":"نعم، كم يكلف هذا مجتمعًا؟"},{"de":"Das macht zusammen sechs Euro.","ar":"هذا يبلغ مجتمعًا ستة يورو.","exampleDe":"Das macht zusammen sechs Euro.","exampleAr":"هذا يبلغ مجتمعًا ستة يورو."}]},{"id":22,"title":"Tagesablauf","titleAr":"الروتين اليومي","icon":"message-circle","desc":"محادثة مستوى A1: الروتين اليومي، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Ich stehe um sieben Uhr auf.","ar":"أستيقظ الساعة السابعة.","exampleDe":"Ich stehe um sieben Uhr auf.","exampleAr":"أستيقظ الساعة السابعة."},{"de":"Was machst du am Vormittag?","ar":"ماذا تفعل في الصباح؟","exampleDe":"Was machst du am Vormittag?","exampleAr":"ماذا تفعل في الصباح؟"},{"de":"Ich arbeite bis zwölf Uhr und esse dann zu Mittag.","ar":"أعمل حتى الساعة الثانية عشرة ثم أتناول الغداء.","exampleDe":"Ich arbeite bis zwölf Uhr und esse dann zu Mittag.","exampleAr":"أعمل حتى الساعة الثانية عشرة ثم أتناول الغداء."},{"de":"Wann gehst du schlafen?","ar":"متى تذهب للنوم؟","exampleDe":"Wann gehst du schlafen?","exampleAr":"متى تذهب للنوم؟"},{"de":"– Um elf Uhr.","ar":"– الساعة الحادية عشرة.","exampleDe":"– Um elf Uhr.","exampleAr":"– الساعة الحادية عشرة."},{"de":"Wann stehst du morgens auf?","ar":"متى تستيقظ صباحًا؟","exampleDe":"Wann stehst du morgens auf?","exampleAr":"متى تستيقظ صباحًا؟"},{"de":"Was isst du zum Frühstück?","ar":"ماذا تأكل على الفطور؟","exampleDe":"Was isst du zum Frühstück?","exampleAr":"ماذا تأكل على الفطور؟"},{"de":"Ich esse Brot mit Käse und trinke Kaffee.","ar":"آكل خبزًا مع الجبن وأشرب القهوة.","exampleDe":"Ich esse Brot mit Käse und trinke Kaffee.","exampleAr":"آكل خبزًا مع الجبن وأشرب القهوة."},{"de":"Was machst du am Abend?","ar":"ماذا تفعل مساءً؟","exampleDe":"Was machst du am Abend?","exampleAr":"ماذا تفعل مساءً؟"},{"de":"Ich sehe fern und gehe um zehn Uhr schlafen.","ar":"أشاهد التلفاز وأذهب للنوم الساعة العاشرة.","exampleDe":"Ich sehe fern und gehe um zehn Uhr schlafen.","exampleAr":"أشاهد التلفاز وأذهب للنوم الساعة العاشرة."}]},{"id":23,"title":"In der Sprachschule","titleAr":"في مدرسة اللغات","icon":"message-circle","desc":"محادثة مستوى A1: في مدرسة اللغات، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"In welcher Klasse bist du?","ar":"في أي صف أنت؟","exampleDe":"In welcher Klasse bist du?","exampleAr":"في أي صف أنت؟"},{"de":"Ich bin im Deutschkurs A1.","ar":"أنا في دورة اللغة الألمانية A1.","exampleDe":"Ich bin im Deutschkurs A1.","exampleAr":"أنا في دورة اللغة الألمانية A1."},{"de":"Wer ist deine Lehrerin?","ar":"من هي مدرستك؟","exampleDe":"Wer ist deine Lehrerin?","exampleAr":"من هي مدرستك؟"},{"de":"Meine Lehrerin heißt Frau Müller.","ar":"اسم مدرستي السيدة مولر.","exampleDe":"Meine Lehrerin heißt Frau Müller.","exampleAr":"اسم مدرستي السيدة مولر."},{"de":"Wie findest du den Kurs?","ar":"كيف تجدين الدورة؟","exampleDe":"Wie findest du den Kurs?","exampleAr":"كيف تجدين الدورة؟"},{"de":"Ich finde den Kurs sehr gut und interessant.","ar":"أجد الدورة جيدة جدًا وممتعة.","exampleDe":"Ich finde den Kurs sehr gut und interessant.","exampleAr":"أجد الدورة جيدة جدًا وممتعة."},{"de":"Machen wir heute die Hausaufgaben?","ar":"هل نفعل الواجبات المنزلية اليوم؟","exampleDe":"Machen wir heute die Hausaufgaben?","exampleAr":"هل نفعل الواجبات المنزلية اليوم؟"},{"de":"Ja, wir müssen Grammatik üben.","ar":"نعم، يجب أن نتمرن على القواعد.","exampleDe":"Ja, wir müssen Grammatik üben.","exampleAr":"نعم، يجب أن نتمرن على القواعد."},{"de":"Hast du ein Wörterbuch dabei?","ar":"هل لديك قاموس معك؟","exampleDe":"Hast du ein Wörterbuch dabei?","exampleAr":"هل لديك قاموس معك؟"},{"de":"Ja, hier ist mein Wörterbuch.","ar":"نعم، هذا قاموسي.","exampleDe":"Ja, hier ist mein Wörterbuch.","exampleAr":"نعم، هذا قاموسي."}]},{"id":24,"title":"Berufe und Arbeit","titleAr":"المهن والعمل","icon":"message-circle","desc":"محادثة مستوى A1: المهن والعمل، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Was bist du von Beruf?","ar":"ما هي مهنتك؟","exampleDe":"Was bist du von Beruf?","exampleAr":"ما هي مهنتك؟"},{"de":"Ich bin Lehrerin von Beruf. Und du?","ar":"أنا معلمة بالمهنة، وأنت؟","exampleDe":"Ich bin Lehrerin von Beruf. Und du?","exampleAr":"أنا معلمة بالمهنة، وأنت؟"},{"de":"Ich arbeite als Ingenieur bei Siemens.","ar":"أنا أعمل كمهندس لدى شركة سيمنز.","exampleDe":"Ich arbeite als Ingenieur bei Siemens.","exampleAr":"أنا أعمل كمهندس لدى شركة سيمنز."},{"de":"Gefällt dir deine Arbeit?","ar":"هل تعجبك وظيفتك؟","exampleDe":"Gefällt dir deine Arbeit?","exampleAr":"هل تعجبك وظيفتك؟"},{"de":"Ja, meine Arbeit macht mir viel Spaß.","ar":"نعم، عملي يسبب لي الكثير من المتعة.","exampleDe":"Ja, meine Arbeit macht mir viel Spaß.","exampleAr":"نعم، عملي يسبب لي الكثير من المتعة."},{"de":"Wie lange arbeitest du jeden Tag?","ar":"كم من الوقت تعمل كل يوم؟","exampleDe":"Wie lange arbeitest du jeden Tag?","exampleAr":"كم من الوقت تعمل كل يوم؟"},{"de":"Ich arbeite acht Stunden am Tag.","ar":"أنا أعمل ثماني ساعات في اليوم.","exampleDe":"Ich arbeite acht Stunden am Tag.","exampleAr":"أنا أعمل ثماني ساعات في اليوم."},{"de":"Hast du am Wochenende frei?","ar":"هل لديك عطلة في نهاية الأسبوع؟","exampleDe":"Hast du am Wochenende frei?","exampleAr":"هل لديك عطلة في نهاية الأسبوع؟"},{"de":"Ja, am Samstag und Sonntag arbeite ich nicht.","ar":"نعم، يومي السبت والأحد لا أعمل.","exampleDe":"Ja, am Samstag und Sonntag arbeite ich nicht.","exampleAr":"نعم، يومي السبت والأحد لا أعمل."},{"de":"Das ist super!","ar":"هذا رائع جدًا!","exampleDe":"Das ist super!","exampleAr":"هذا رائع جدًا!"}]},{"id":25,"title":"Körper und Gesundheit","titleAr":"الجسم والصحة","icon":"message-circle","desc":"محادثة مستوى A1: الجسم والصحة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Wie geht es dir heute?","ar":"كيف حالك اليوم؟","exampleDe":"Wie geht es dir heute?","exampleAr":"كيف حالك اليوم؟"},{"de":"Mir geht es nicht gut. Mein Rücken tut weh.","ar":"أنا لست بخير، ظهري يؤلمني.","exampleDe":"Mir geht es nicht gut. Mein Rücken tut weh.","exampleAr":"أنا لست بخير، ظهري يؤلمني."},{"de":"Oh, das tut mir leid. Hast du auch Kopfschmerzen?","ar":"أوه، أنا آسف لذلك. هل لديك صداع أيضًا؟","exampleDe":"Oh, das tut mir leid. Hast du auch Kopfschmerzen?","exampleAr":"أوه، أنا آسف لذلك. هل لديك صداع أيضًا؟"},{"de":"Nein, mein Kopf tut nicht weh.","ar":"لا، رأسي لا يؤلمني.","exampleDe":"Nein, mein Kopf tut nicht weh.","exampleAr":"لا، رأسي لا يؤلمني."},{"de":"Du musst dich ausruhen.","ar":"يجب عليك أن ترتاح.","exampleDe":"Du musst dich ausruhen.","exampleAr":"يجب عليك أن ترتاح."},{"de":"Ja, ich bleibe heute im Bett.","ar":"نعم، سأبقى اليوم في السرير.","exampleDe":"Ja, ich bleibe heute im Bett.","exampleAr":"نعم، سأبقى اليوم في السرير."},{"de":"Trinkst du warmen Tee?","ar":"هل تشرب شايًا دافئًا؟","exampleDe":"Trinkst du warmen Tee?","exampleAr":"هل تشرب شايًا دافئًا؟"},{"de":"Ja, ich trinke Kamillentee.","ar":"نعم، أنا أشرب شاي البابونج.","exampleDe":"Ja, ich trinke Kamillentee.","exampleAr":"نعم، أنا أشرب شاي البابونج."},{"de":"Brauchst du eine Salbe?","ar":"هل تحتاج مرهمًا؟","exampleDe":"Brauchst du eine Salbe?","exampleAr":"هل تحتاج مرهمًا؟"},{"de":"Nein danke. Gute Besserung!","ar":"لا شكرًا. أتمنى الشفاء العاجل!","exampleDe":"Nein danke. Gute Besserung!","exampleAr":"لا شكرًا. أتمنى الشفاء العاجل!"}]},{"id":26,"title":"Obst und Gemüse","titleAr":"شراء الفواكه والخضار","icon":"message-circle","desc":"محادثة مستوى A1: الفواكه والخضروات، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich möchte Tomaten kaufen.","ar":"نهارك سعيد! أرغب بشراء طماطم.","exampleDe":"Guten Tag! Ich möchte Tomaten kaufen.","exampleAr":"نهارك سعيد! أرغب بشراء طماطم."},{"de":"Wie viel Kilo Tomaten möchten Sie?","ar":"كم كيلو من الطماطم تريد؟","exampleDe":"Wie viel Kilo Tomaten möchten Sie?","exampleAr":"كم كيلو من الطماطم تريد؟"},{"de":"Ich nehme ein Kilo Tomaten.","ar":"سآخذ كيلو واحدًا من الطماطم.","exampleDe":"Ich nehme ein Kilo Tomaten.","exampleAr":"سآخذ كيلو واحدًا من الطماطم."},{"de":"Möchten Sie auch frische Bananen?","ar":"هل ترغب أيضًا بموز طازج؟","exampleDe":"Möchten Sie auch frische Bananen?","exampleAr":"هل ترغب أيضًا بموز طازج؟"},{"de":"Ja, geben Sie mir drei Bananen.","ar":"نعم، أعطني ثلاث موزات.","exampleDe":"Ja, geben Sie mir drei Bananen.","exampleAr":"نعم، أعطني ثلاث موزات."},{"de":"Brauchen Sie Kartoffeln?","ar":"هل تحتاج بطاطا؟","exampleDe":"Brauchen Sie Kartoffeln?","exampleAr":"هل تحتاج بطاطا؟"},{"de":"Ja, ich brauche zwei Kilo Kartoffeln.","ar":"نعم، أحتاج كيلوين من البطاطا.","exampleDe":"Ja, ich brauche zwei Kilo Kartoffeln.","exampleAr":"نعم، أحتاج كيلوين من البطاطا."},{"de":"Ist das alles?","ar":"هل هذا كل شيء؟","exampleDe":"Ist das alles?","exampleAr":"هل هذا كل شيء؟"},{"de":"Ja, das ist alles. Wo zahle ich?","ar":"نعم، هذا كل شيء. أين أدفع؟","exampleDe":"Ja, das ist alles. Wo zahle ich?","exampleAr":"نعم، هذا كل شيء. أين أدفع؟"},{"de":"Sie zahlen an der Kasse dort.","ar":"تدفع عند الصندوق هناك.","exampleDe":"Sie zahlen an der Kasse dort.","exampleAr":"تدفع عند الصندوق هناك."}]},{"id":27,"title":"Einladung","titleAr":"الدعوة لعيد ميلاد","icon":"message-circle","desc":"محادثة مستوى A1: دعوة، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Hallo Noor! Ich habe am Samstag Geburtstag.","ar":"مرحبًا نور! لدي عيد ميلاد يوم السبت.","exampleDe":"Hallo Noor! Ich habe am Samstag Geburtstag.","exampleAr":"مرحبًا نور! لدي عيد ميلاد يوم السبت."},{"de":"Herzlichen Glückwunsch im Voraus!","ar":"مبارك مقدمًا!","exampleDe":"Herzlichen Glückwunsch im Voraus!","exampleAr":"مبارك مقدمًا!"},{"de":"Ich mache eine Party. Kommst du?","ar":"سأقيم حفلة. هل تأتين؟","exampleDe":"Ich mache eine Party. Kommst du?","exampleAr":"سأقيم حفلة. هل تأتين؟"},{"de":"Ja, gerne! Wann beginnt die Party?","ar":"نعم بكل سرور! متى تبدأ الحفلة؟","exampleDe":"Ja, gerne! Wann beginnt die Party?","exampleAr":"نعم بكل سرور! متى تبدأ الحفلة؟"},{"de":"Die Party beginnt um zwanzig Uhr.","ar":"تبدأ الحفلة في الساعة الثامنة مساءً.","exampleDe":"Die Party beginnt um zwanzig Uhr.","exampleAr":"تبدأ الحفلة في الساعة الثامنة مساءً."},{"de":"Kann ich meinen Freund mitbringen?","ar":"هل أستطيع إحضار صديقي معي؟","exampleDe":"Kann ich meinen Freund mitbringen?","exampleAr":"هل أستطيع إحضار صديقي معي؟"},{"de":"Ja klar, dein Freund ist willkommen!","ar":"نعم بالطبع، صديقك مرحب به!","exampleDe":"Ja klar, dein Freund ist willkommen!","exampleAr":"نعم بالطبع، صديقك مرحب به!"},{"de":"Soll ich einen Kuchen mitbringen?","ar":"هل يجب أن أحضر كعكة؟","exampleDe":"Soll ich einen Kuchen mitbringen?","exampleAr":"هل يجب أن أحضر كعكة؟"},{"de":"Nein, ich habe schon einen Kuchen gekauft.","ar":"لا، لقد اشتريت كعكة بالفعل.","exampleDe":"Nein, ich habe schon einen Kuchen gekauft.","exampleAr":"لا، لقد اشتريت كعكة بالفعل."},{"de":"Schön! Bis Samstag!","ar":"جميل! إلى اللقاء يوم السبت!","exampleDe":"Schön! Bis Samstag!","exampleAr":"جميل! إلى اللقاء يوم السبت!"}]},{"id":28,"title":"Bei der Post","titleAr":"في مكتب البريد","icon":"message-circle","desc":"محادثة مستوى A1: في مكتب البريد، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Guten Tag! Ich möchte diesen Brief verschicken.","ar":"نهارك سعيد! أريد إرسال هذه الرسالة.","exampleDe":"Guten Tag! Ich möchte diesen Brief verschicken.","exampleAr":"نهارك سعيد! أريد إرسال هذه الرسالة."},{"de":"Soll der Brief nach Arabien gehen?","ar":"هل يجب أن تذهب الرسالة إلى البلاد العربية؟","exampleDe":"Soll der Brief nach Arabien gehen?","exampleAr":"هل يجب أن تذهب الرسالة إلى البلاد العربية؟"},{"de":"Nein, der Brief geht in den Irak.","ar":"لا، الرسالة تذهب إلى العراق.","exampleDe":"Nein, der Brief geht in den Irak.","exampleAr":"لا، الرسالة تذهب إلى العراق."},{"de":"Sie müssen eine Briefmarke kaufen.","ar":"يجب عليك شراء طابع بريدي.","exampleDe":"Sie müssen eine Briefmarke kaufen.","exampleAr":"يجب عليك شراء طابع بريدي."},{"de":"Wie viel kostet die Briefmarke?","ar":"كم تكلفة الطابع البريدي؟","exampleDe":"Wie viel kostet die Briefmarke?","exampleAr":"كم تكلفة الطابع البريدي؟"},{"de":"Die Marke kostet zwei Euro.","ar":"سعر الطابع يوروَان.","exampleDe":"Die Marke kostet zwei Euro.","exampleAr":"سعر الطابع يوروَان."},{"de":"Ich möchte auch ein Paket aufgeben.","ar":"أريد أيضاً إرسال طرد.","exampleDe":"Ich möchte auch ein Paket aufgeben.","exampleAr":"أريد أيضاً إرسال طرد."},{"de":"Wie schwer ist das Paket?","ar":"كم وزن الطرد؟","exampleDe":"Wie schwer ist das Paket?","exampleAr":"كم وزن الطرد؟"},{"de":"Das Paket wiegt drei Kilo.","ar":"وزن الطرد ثلاثة كيلوغرامات.","exampleDe":"Das Paket wiegt drei Kilo.","exampleAr":"وزن الطرد ثلاثة كيلوغرامات."},{"de":"Das kostet sechs Euro. Kleben Sie die Marke hier auf.","ar":"هذا يكلف ستة يورو. ألصق الطابع هنا.","exampleDe":"Das kostet sechs Euro. Kleben Sie die Marke hier auf.","exampleAr":"هذا يكلف ستة يورو. ألصق الطابع هنا."}]},{"id":29,"title":"Im Restaurant – Rechnung","titleAr":"في المطعم – الحساب","icon":"message-circle","desc":"محادثة مستوى A1: في المطعم – الحساب، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Entschuldigung! Wir möchten bitte bezahlen.","ar":"عفواً! نريد الدفع من فضلك.","exampleDe":"Entschuldigung! Wir möchten bitte bezahlen.","exampleAr":"عفواً! نريد الدفع من فضلك."},{"de":"Zahlen Sie zusammen oder getrennt?","ar":"هل تدفعون معاً أم بشكل منفصل؟","exampleDe":"Zahlen Sie zusammen oder getrennt?","exampleAr":"هل تدفعون معاً أم بشكل منفصل؟"},{"de":"Wir zahlen zusammen.","ar":"سندفع معاً.","exampleDe":"Wir zahlen zusammen.","exampleAr":"سندفع معاً."},{"de":"Das macht zusammen fünfundzwanzig Euro.","ar":"المجموع معاً خمسة وعشرون يورو.","exampleDe":"Das macht zusammen fünfundzwanzig Euro.","exampleAr":"المجموع معاً خمسة وعشرون يورو."},{"de":"Kann ich mit Karte zahlen?","ar":"هل أستطيع الدفع بالبطاقة؟","exampleDe":"Kann ich mit Karte zahlen?","exampleAr":"هل أستطيع الدفع بالبطاقة؟"},{"de":"Ja, unser Gerät akzeptiert Ihre Karte.","ar":"نعم، جهازنا يقبل بطاقتك.","exampleDe":"Ja, unser Gerät akzeptiert Ihre Karte.","exampleAr":"نعم، جهازنا يقبل بطاقتك."},{"de":"Hier sind dreißig Euro. Der Rest ist Trinkgeld.","ar":"تفضل ثلاثون يورو. الباقي إكرامية.","exampleDe":"Hier sind dreißig Euro. Der Rest ist Trinkgeld.","exampleAr":"تفضل ثلاثون يورو. الباقي إكرامية."},{"de":"Vielen Dank! Das ist sehr nett.","ar":"شكراً جزيلاً! هذا لطف كبير منك.","exampleDe":"Vielen Dank! Das ist sehr nett.","exampleAr":"شكراً جزيلاً! هذا لطف كبير منك."},{"de":"Das Essen war wirklich sehr lecker.","ar":"كان الطعام لذيذاً جداً حقاً.","exampleDe":"Das Essen war wirklich sehr lecker.","exampleAr":"كان الطعام لذيذاً جداً حقاً."},{"de":"Vielen Dank! Auf Wiedersehen!","ar":"شكراً جزيلاً! إلى اللقاء!","exampleDe":"Vielen Dank! Auf Wiedersehen!","exampleAr":"شكراً جزيلاً! إلى اللقاء!"}]},{"id":30,"title":"Am Wochenende","titleAr":"عطلة نهاية الأسبوع","icon":"message-circle","desc":"محادثة مستوى A1: في عطلة نهاية الأسبوع، مع ترجمة عربية وزر للاستماع إلى كل سطر.","items":[{"de":"Was machst du am Wochenende, Noor?","ar":"ماذا تفعلين في عطلة نهاية الأسبوع يا نور؟","exampleDe":"Was machst du am Wochenende, Noor?","exampleAr":"ماذا تفعلين في عطلة نهاية الأسبوع يا نور؟"},{"de":"Ich fahre am Samstag nach Hamburg.","ar":"سأسافر يوم السبت إلى هامبورغ.","exampleDe":"Ich fahre am Samstag nach Hamburg.","exampleAr":"سأسافر يوم السبت إلى هامبورغ."},{"de":"Fährst du mit dem Zug?","ar":"هل تسافرين بالقطار؟","exampleDe":"Fährst du mit dem Zug?","exampleAr":"هل تسافرين بالقطار؟"},{"de":"Ja, ich fahre mit dem Zug.","ar":"نعم، أنا أسافر بالقطار.","exampleDe":"Ja, ich fahre mit dem Zug.","exampleAr":"نعم، أنا أسافر بالقطار."},{"de":"Was besichtigst du in Hamburg?","ar":"ماذا ستستكشفين/تزورين في هامبورغ؟","exampleDe":"Was besichtigst du in Hamburg?","exampleAr":"ماذا ستستكشفين/تزورين في هامبورغ؟"},{"de":"Ich besichtige den Hafen und das Museum.","ar":"سأزور الميناء والمتحف.","exampleDe":"Ich besichtige den Hafen und das Museum.","exampleAr":"سأزور الميناء والمتحف."},{"de":"Wie lange bleibst du dort?","ar":"كم ستبقين هناك؟","exampleDe":"Wie lange bleibst du dort?","exampleAr":"كم ستبقين هناك؟"},{"de":"Ich bleibe zwei Tage dort.","ar":"سأبقى هناك يومين.","exampleDe":"Ich bleibe zwei Tage dort.","exampleAr":"سأبقى هناك يومين."},{"de":"Ich wünsche dir ein schönes Wochenende!","ar":"أتمنى لك عطلة نهاية أسبوع جميلة!","exampleDe":"Ich wünsche dir ein schönes Wochenende!","exampleAr":"أتمنى لك عطلة نهاية أسبوع جميلة!"},{"de":"Danke, Ali! Dir auch ein schönes Wochenende!","ar":"شكرًا يا علي! ولك أيضًا عطلة نهاية أسبوع جميلة!","exampleDe":"Danke, Ali! Dir auch ein schönes Wochenende!","exampleAr":"شكرًا يا علي! ولك أيضًا عطلة نهاية أسبوع جميلة!"}]}];        // --- APP STATE ---
+        let activeCategoryId = 1;
+        let globalPlaybackSpeed = 1.0;
+        let femaleVoice = null;
+
+        // --- WEB SPEECH SYNTHESIS ENGINE ---
+        function initVoiceEngine() {
+            if (!('speechSynthesis' in window) || typeof window.SpeechSynthesisUtterance === 'undefined') {
+                updateVoiceStatus("سيُستخدم مشغل الصوت الاحتياطي عبر الإنترنت", true);
+                return;
+            }
+
+            function loadVoices() {
+                const voices = window.speechSynthesis.getVoices();
+                if (voices.length === 0) {
+                    updateVoiceStatus("جارٍ تحميل الأصوات الألمانية…", true);
+                    return;
+                }
+
+                // Priority filter for German Female Voice
+                const germanVoices = voices.filter(v => v.lang.startsWith('de'));
+                
+                // Search specifically for female voice indicators in names
+                femaleVoice = germanVoices.find(v => 
+                    /female|hedda|marlene|vicki|katja|gudrun|petra|zira|karen|helena/i.test(v.name)
+                ) || germanVoices.find(v => v.lang === 'de-DE') || germanVoices[0];
+
+                if (femaleVoice) {
+                    updateVoiceStatus(`الصوت المفعل: ${femaleVoice.name} (أنثوي ألماني)`, true);
+                } else if (voices.length > 0) {
+                    updateVoiceStatus("صوت قياسي افتراضي (de)", true);
+                }
+            }
+
+            loadVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = loadVoices;
+            }
+        }
+
+        // لا توجد نافذة حالة للصوت؛ تبقى الواجهة خالية من إشعارات التشغيل.
+        function updateVoiceStatus() {}
+
+        // تشغيل النطق: Web Speech أولاً، مع مشغل احتياطي للأجهزة/المتصفحات التي لا تدعمه.
+        let fallbackAudio = null;
+        function speakText(text, onEndCallback = null) {
+            const phrase = String(text || '').trim();
+            if (!phrase) return;
+            if (window.speechSynthesis && typeof window.SpeechSynthesisUtterance !== 'undefined') {
+                try {
+                    window.speechSynthesis.cancel();
+                    const utterance = new SpeechSynthesisUtterance(phrase);
+                    utterance.lang = 'de-DE';
+                    utterance.rate = globalPlaybackSpeed;
+                    const voices = window.speechSynthesis.getVoices();
+                    if (!femaleVoice && voices.length) {
+                        const german = voices.filter(v => /^de([_-]|$)/i.test(v.lang));
+                        femaleVoice = german.find(v => /female|hedda|marlene|vicki|katja|gudrun|petra|helena/i.test(v.name))
+                            || german.find(v => /^de[-_]DE$/i.test(v.lang)) || german[0] || null;
+                    }
+                    if (femaleVoice) utterance.voice = femaleVoice;
+                    showToast(phrase, femaleVoice ? `الصوت: ${femaleVoice.name}` : 'النطق الألماني');
+                    let completed = false;
+                    const done = () => {
+                        if (completed) return;
+                        completed = true;
+                        hideToast();
+                        if (onEndCallback) onEndCallback();
+                    };
+                    utterance.onend = done;
+                    utterance.onerror = (e) => {
+                        console.warn('Speech synthesis error:', e && e.error);
+                        // لا نستخدم الاحتياطي عند الإلغاء المتعمد.
+                        if (e && e.error === 'canceled') return;
+                        playFallbackAudio(phrase, globalPlaybackSpeed, onEndCallback);
+                    };
+                    window.speechSynthesis.speak(utterance);
+                    return;
+                } catch (err) {
+                    console.warn('Speech synthesis unavailable:', err);
+                }
+            }
+            playFallbackAudio(phrase, globalPlaybackSpeed, onEndCallback);
+        }
+
+        function playFallbackAudio(phrase, speed = 1, onEndCallback = null) {
+            try {
+                if (fallbackAudio) {
+                    fallbackAudio.pause();
+                    fallbackAudio.src = '';
+                }
+                // خدمة نطق احتياطية عبر الإنترنت؛ تتطلب اتصالاً بالإنترنت.
+                fallbackAudio = new Audio('https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=de&q=' + encodeURIComponent(phrase));
+                fallbackAudio.playbackRate = Math.max(0.5, Math.min(1.5, Number(speed) || 1));
+                showToast(phrase, 'نطق ألماني احتياطي عبر الإنترنت');
+                fallbackAudio.onended = () => {
+                    hideToast();
+                    if (onEndCallback) onEndCallback();
+                };
+                fallbackAudio.onerror = () => {
+                    hideToast();
+                    updateVoiceStatus('تعذر تشغيل الصوت؛ جرّب Chrome مع اتصال بالإنترنت', false);
+                };
+                const playPromise = fallbackAudio.play();
+                if (playPromise && playPromise.catch) playPromise.catch(err => {
+                    console.warn('Fallback audio error:', err);
+                    hideToast();
+                    updateVoiceStatus('تعذر تشغيل الصوت؛ تحقق من المتصفح والإنترنت', false);
+                });
+            } catch (err) {
+                console.warn('Fallback audio unavailable:', err);
+                updateVoiceStatus('الصوت غير متاح في هذا المتصفح', false);
+            }
+        }
+
+        // --- UI TOAST NOTIFICATION ---
+        // تم إلغاء مستطيل إشعار الصوت؛ التشغيل يعمل دون إشعارات منبثقة.
+        function showToast() {}
+        function hideToast() {}
+
+        // --- RENDER FUNCTIONS ---
+        function renderCategoryList(filterQuery = "") {
+            const container = document.getElementById('categoryList');
+            container.innerHTML = "";
+
+            categoriesData.forEach(cat => {
+                if (filterQuery) {
+                    const matchTitle = cat.title.toLowerCase().includes(filterQuery.toLowerCase());
+                    const matchAr = cat.titleAr.includes(filterQuery);
+                    const matchItem = cat.items.some(i => i.de.toLowerCase().includes(filterQuery.toLowerCase()) || i.ar.includes(filterQuery));
+                    if (!matchTitle && !matchAr && !matchItem) return;
+                }
+
+                const isActive = cat.id === activeCategoryId;
+                const btn = document.createElement('button');
+                btn.className = `w-full text-right px-3 py-2.5 rounded-xl flex items-center justify-between transition text-xs font-semibold ${
+                    isActive 
+                        ? 'bg-rose-50 text-rose-700 border border-rose-200 shadow-sm' 
+                        : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                }`;
+
+                btn.onclick = () => {
+                    activeCategoryId = cat.id;
+                    renderCategoryList(filterQuery);
+                    renderActiveCategory();
+                    // Close sidebar on mobile
+                    document.getElementById('sidebar').classList.add('translate-x-full');
+                    const backdrop = document.getElementById('sidebarBackdrop'); if (backdrop) backdrop.classList.add('hidden');
+                };
+
+                btn.innerHTML = `
+                    <div class="flex items-center gap-2.5 min-w-0">
+                        <span class="w-6 h-6 rounded-lg ${isActive ? 'bg-rose-600 text-white' : 'bg-slate-100 text-slate-500'} flex items-center justify-center text-[10px] font-bold shrink-0">
+                            ${cat.id}
+                        </span>
+                        <div class="truncate">
+                            <span class="block text-slate-900 font-bold truncate">${cat.title}</span>
+                            <span class="block text-[11px] text-slate-400 font-normal truncate">${cat.titleAr}</span>
+                        </div>
+                    </div>
+                    <i data-lucide="chevron-left" class="w-4 h-4 text-slate-400 shrink-0"></i>
+                `;
+                container.appendChild(btn);
+            });
+
+            lucide.createIcons();
+        }
+
+        function renderActiveCategory() {
+            const cat = categoriesData.find(c => c.id === activeCategoryId) || categoriesData[0];
+            document.getElementById('categoryNumber').innerText = `محادثة ${cat.id} من ${categoriesData.length}`;
+            document.getElementById('categoryTitle').innerText = `${cat.title} (${cat.titleAr})`;
+            document.getElementById('categorySubtitle').innerText = cat.desc;
+            document.getElementById('categoryIcon').setAttribute('data-lucide', cat.icon || 'message-circle');
+            const grid = document.getElementById('vocabGrid');
+            grid.className = "grid grid-cols-1 gap-4";
+            grid.innerHTML = "";
+            cat.items.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200/80 hover:shadow-md transition";
+                const safeDe = item.de.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\\n/g, ' ');
+                card.innerHTML = `
+                    <div class="flex flex-col gap-2">
+                      <div class="flex items-start gap-3">
+                        <span class="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-rose-100 text-rose-700 font-extrabold text-sm">${index+1}</span>
+                        <div class="flex-1 min-w-0">
+                          <p class="de-text text-lg sm:text-xl font-bold text-slate-900 leading-relaxed">${item.de}</p>
+                          <p class="text-sm sm:text-base text-slate-600 mt-1 leading-relaxed">${item.ar}</p>
+                        </div>
+                      </div>
+                      <div class="flex justify-end pt-2 border-t border-slate-100">
+                        <button onclick="speakText('${safeDe}')" class="inline-flex items-center gap-2 px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl shadow-sm transition text-sm font-bold" aria-label="استمع إلى السطر ${index+1}">
+                          <i data-lucide="volume-2" class="w-4 h-4"></i><span>استمع إلى السطر</span>
+                        </button>
+                      </div>
+                    </div>`;
+                grid.appendChild(card);
+            });
+            lucide.createIcons();
+        }
+
+        // --- تشغيل المحادثة بالتتابع مع إمكانية الإيقاف والاستئناف ---
+        let sequencePlaying = false;
+        let sequenceIndex = 0;
+        let sequenceCategoryId = null;
+        let sequenceTimer = null;
+
+        function updatePlayAllButton(playing) {
+            const btn = document.getElementById('playAllBtn');
+            if (!btn) return;
+            btn.innerHTML = playing
+                ? '<i data-lucide="square" class="w-4 h-4 text-rose-600"></i><span>إيقاف تشغيل المحادثة</span>'
+                : '<i data-lucide="play-circle" class="w-4 h-4 text-rose-600"></i><span>استماع إلى المحادثة بالتتابع</span>';
+            btn.setAttribute('aria-pressed', playing ? 'true' : 'false');
+            lucide.createIcons();
+        }
+
+        function stopSequentialPlayback(reset = true) {
+            sequencePlaying = false;
+            if (sequenceTimer) { clearTimeout(sequenceTimer); sequenceTimer = null; }
+            if (window.speechSynthesis) window.speechSynthesis.cancel();
+            if (fallbackAudio) { try { fallbackAudio.pause(); fallbackAudio.currentTime = 0; } catch (e) {} }
+            if (reset) { sequenceIndex = 0; sequenceCategoryId = null; }
+            updatePlayAllButton(false);
+        }
+
+        function playAllCategoryItems() {
+            if (sequencePlaying) {
+                stopSequentialPlayback(true);
+                return;
+            }
+            const cat = categoriesData.find(c => c.id === activeCategoryId) || categoriesData[0];
+            if (!cat || !cat.items || !cat.items.length) return;
+            sequencePlaying = true;
+            sequenceIndex = 0;
+            sequenceCategoryId = cat.id;
+            updatePlayAllButton(true);
+
+            function playNext() {
+                if (!sequencePlaying) return;
+                const currentCat = categoriesData.find(c => c.id === sequenceCategoryId);
+                if (!currentCat || sequenceIndex >= currentCat.items.length) {
+                    stopSequentialPlayback(true);
+                    return;
+                }
+                const item = currentCat.items[sequenceIndex];
+                sequenceIndex++;
+                speakText(item.de, () => {
+                    if (!sequencePlaying) return;
+                    sequenceTimer = setTimeout(playNext, 500);
+                });
+            }
+            playNext();
+        }
+
+        // --- EVENT LISTENERS ---
+        document.addEventListener('DOMContentLoaded', () => {
+            initVoiceEngine();
+            renderCategoryList();
+            renderActiveCategory();
+
+            // Mobile Menu
+            const sidebar = document.getElementById('sidebar');
+            const sidebarBackdrop = document.getElementById('sidebarBackdrop');
+            const openPages = () => { sidebar.classList.remove('translate-x-full'); sidebarBackdrop.classList.remove('hidden'); };
+            const closePages = () => { sidebar.classList.add('translate-x-full'); sidebarBackdrop.classList.add('hidden'); };
+            document.getElementById('mobileMenuBtn').onclick = openPages;
+            document.getElementById('closeSidebarBtn').onclick = closePages;
+            sidebarBackdrop.onclick = closePages;
+
+            // Category Search
+            document.getElementById('categorySearch').oninput = (e) => {
+                renderCategoryList(e.target.value);
+            };
+
+            // Speed Selector Buttons: the chosen value is used for every next pronunciation.
+            document.querySelectorAll('.speed-btn').forEach((btn) => {
+                btn.addEventListener('click', function () {
+                    const chosenSpeed = Number(this.getAttribute('data-speed'));
+                    if (!Number.isFinite(chosenSpeed) || chosenSpeed < 0.5 || chosenSpeed > 1.5) return;
+
+                    globalPlaybackSpeed = chosenSpeed;
+
+                    document.querySelectorAll('.speed-btn').forEach((button) => {
+                        button.classList.remove('active-speed', 'bg-rose-600', 'text-white', 'shadow-sm');
+                        button.classList.add('text-slate-600');
+                        button.setAttribute('aria-pressed', 'false');
+                    });
+
+                    this.classList.remove('text-slate-600');
+                    this.classList.add('active-speed', 'bg-rose-600', 'text-white', 'shadow-sm');
+                    this.setAttribute('aria-pressed', 'true');
+                });
+            });
+
+            // Play All Button
+            document.getElementById('playAllBtn').onclick = playAllCategoryItems;
+        });
+    </script>
+</body>
+</html>
